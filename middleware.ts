@@ -23,5 +23,6 @@ export const middleware = paymentMiddleware(
 
 // Configure which paths the middleware should run on
 export const config = {
+  runtime: "nodejs",
   matcher: ["/protected/:path*"],
 };
